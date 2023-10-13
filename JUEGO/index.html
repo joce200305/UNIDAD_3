@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <title>JUEGO DEL GATO</title>
+    <style>
+      .board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 300px;
+        border: none;
+      }
+
+      .casilla {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(154, 139, 232);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        cursor: pointer;
+      }
+
+      .message {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body class="text-center mt-4 font-monospace">
+    
+    <div class="card text-center d-grid gap-2 col-6 mx-auto">
+      <h1 class="text-center font-monospace">GATO</h1>
+      <div class="card-body text-center d-grid gap-2 col-6 mx-auto">
+        <div class="board text-center">
+          <div class="casilla"></div>
+          <div class="casilla"></div>
+          <div class="casilla"></div>
+          <div class="casilla"></div>
+          <div class="casilla"></div>
+          <div class="casilla"></div>
+          <div class="casilla"></div>
+          <div class="casilla"></div>
+          <div class="casilla"></div>
+        </div>
+      </div>
+    </div>
+
+    <p></p>
+    <button class="btn btn-primary btn-lg text-center" id="reincio">
+      Reiniciar
+    </button>
+   
+    <div id="mensaje" style="display: none;">¡Juego terminado!</div>
+
+    <script src="./juego.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
